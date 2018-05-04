@@ -1,0 +1,54 @@
+{
+  "name": "w4w-frontend-ts",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@blueprintjs/core": "^2.0.1",
+    "@blueprintjs/icons": "^2.0.0",
+    "@blueprintjs/select": "^2.0.0",
+    "axios": "^0.18.0",
+    "bootstrap-select": "^1.12.4",
+    "lodash": "^4.17.5",
+    "moment": "^2.22.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.1.1",
+    "react-scripts-ts": "2.14.0",
+    "react-stomp": "^3.0.1",
+    "react-transition-group": "^2.3.0",
+    "redux": "^3.7.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "sockjs": "0.3.19",
+    "sockjs-client": "1.1.4",
+    "yarn-install": "^1.0.0"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/jest": "^22.2.2",
+    "@types/lodash": "^4.14.106",
+    "@types/node": "^9.6.1",
+    "@types/react": "^16.1.0",
+    "@types/react-dom": "^16.0.4",
+    "@types/react-transition-group": "^2.0.7",
+    "typescript": "^2.8.1"
+  },
+  "proxy": {
+    "/": {
+      "target": "http://localhost:8080/"
+    },
+    "ws": {
+        "target": "http://localhost:8080/",
+        "ws": true
+    }
+
+
+  }
+}
